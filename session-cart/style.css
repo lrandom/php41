@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* body {
+    background-color: #fefefe;
+} */
+.tittle {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin:2rem 0;
+    text-transform: uppercase;
+}
+.single-product {
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefefe;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.single-product:hover::before {
+    display: block;
+}
+.single-product::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.img-item-box {
+    width: 100%;
+}
+.img-item {
+    width: 100%;
+    object-fit: cover;
+    border-radius:5px 5px 0 0;
+}
+.content-item-box {
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+.name-item {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.price-item {
+    font-size: 16px;
+    font-weight: 500;
+}
+button.btn-add {
+    display: none;
+}
+.add-icon {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.single-product:hover .btn-add{
+    display: block;
+}
+
