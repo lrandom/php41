@@ -48,7 +48,7 @@ $products = [
                 <img src="<?php echo $r['thumbnail']; ?>" alt="">
                 <h4><?php echo $r['name']; ?></h4>
                 <div>Giá:<strong><?php echo $r['price']; ?> usd</strong></div>
-                <a href="cart.php?id=<?php echo $r['id']; ?>">Thêm vào giỏ hàng</a>
+                <a href="cart.php?action=add&id=<?php echo $r['id']; ?>">Thêm vào giỏ hàng</a>
             </div>
 
             <?php
