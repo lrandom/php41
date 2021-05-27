@@ -1,6 +1,8 @@
 <?php
 
 
+use function MongoDB\BSON\toCanonicalExtendedJSON;
+
 if (isset($_FILES['image']) && $_FILES['image']['name'] != null) {
     //xử lý upload
     /*$name = $_FILES['image']['name'];
@@ -19,3 +21,4 @@ if (isset($_FILES['image']) && $_FILES['image']['name'] != null) {
     move_uploaded_file($tmpName, $newFolder.'/'.time().$name);
 }
 ?>
+
