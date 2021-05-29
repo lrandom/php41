@@ -10,10 +10,14 @@
 <body>
 <?php
 require 'Human.php';
-$luan = new Human(); //tạo cho chúng ta một đối tượng từ lớp Human -> đúc đối tượng từ bản tk Human
-$manh = new Human();
+require 'Student.php';
+//$luan = new Human(); //tạo cho chúng ta một đối tượng từ lớp Human -> đúc đối tượng từ bản tk Human
+//$manh = new Human();
 
-$luan->name = "Luan";
+//$nam = new Human("xanh", "đỏ", "Nam", 1.80);
+
+
+/*$luan->name = "Luan";
 $luan->eyeColor = "Nâu";
 $luan->hairColor = "Đen";
 $luan->height = 1.72;
@@ -23,7 +27,15 @@ $manh->name = "Manh";
 $manh->eyeColor = "Đen";
 $manh->hairColor = "vàng";
 $luan->height = 1.75;
-$manh->sleep();
+$manh->sleep();*/
+echo '<br>';
+//$nam->eat();
+
+//unset($nam);
+
+$linh = new Student("xanh", "đỏ", "Linh", 1.80);
+$linh->id = "001";
+$linh->learning();
 ?>
 </body>
 </html>
